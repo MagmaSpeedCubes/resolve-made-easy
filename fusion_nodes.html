@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fusion Nodes — Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fusion_nodes.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="header-title">DaVinci Resolve 17 · Fusion</div>
+    <div class="header-main">Node <span>Reference</span></div>
+  </div>
+  <div class="search-wrap">
+    <input class="search-input" id="search" type="text" placeholder="Search nodes…" />
+  </div>
+</header>
+
+<div class="filter-bar">
+  <span class="filter-label">Category</span>
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="blur">Blur</button>
+  <button class="filter-btn" data-filter="color">Color</button>
+  <button class="filter-btn" data-filter="composite">Composite</button>
+  <button class="filter-btn" data-filter="effect">Effect</button>
+  <button class="filter-btn" data-filter="filter">Filter</button>
+  <button class="filter-btn" data-filter="generator">Generator</button>
+  <button class="filter-btn" data-filter="mask">Mask</button>
+  <button class="filter-btn" data-filter="matte">Matte</button>
+  <button class="filter-btn" data-filter="transform">Transform</button>
+  <button class="filter-btn" data-filter="io">I/O</button>
+  <button class="filter-btn" data-filter="misc">Misc</button>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="no-results" id="no-results">No nodes match your search.</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="overlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-cat-bar" id="modal-bar"></div>
+      <div class="modal-title-area">
+        <div class="modal-abbr" id="modal-abbr"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-cat" id="modal-cat"></div>
+      </div>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-desc" id="modal-desc"></p>
+
+      <div id="inputs-section" class="io-section">
+        <div class="section-label">Inputs</div>
+        <div id="modal-inputs"></div>
+      </div>
+
+      <div id="outputs-section" class="io-section">
+        <div class="section-label">Outputs</div>
+        <div id="modal-outputs"></div>
+      </div>
+
+      <button class="adv-btn" id="adv-btn">
+        <span>Inspector Parameters</span>
+        <span class="chevron">▾</span>
+      </button>
+      <div class="params-section" id="params-section">
+        <div class="params-spacer"></div>
+        <div class="section-label">Parameters</div>
+        <div id="modal-params"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="fusion_nodes.js"></script>
+</body>
+</html>

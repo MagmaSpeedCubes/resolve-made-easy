@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive DaVinci Resolve Color Page Mockup</title>
+  <link rel="stylesheet" href="davinci_resolve_color_page.css">
+</head>
+<body>
+  <main class="resolve-page" aria-label="Interactive DaVinci Resolve Color page mockup">
+    <header class="app-topbar">
+      <div class="traffic-lights" aria-hidden="true">
+        <span class="traffic red"></span>
+        <span class="traffic amber"></span>
+        <span class="traffic green"></span>
+      </div>
+      <nav class="top-tabs" aria-label="Color page upper panels">
+        <button class="top-tab active" data-info="gallery">Gallery</button>
+        <button class="top-tab" data-info="luts">LUTs</button>
+        <button class="top-tab" data-info="media-pool">Media Pool</button>
+        <button class="top-tab active" data-info="clips">Clips</button>
+      </nav>
+      <div class="project-title" data-info="project-title">GDC</div>
+      <nav class="top-tabs top-tabs-right" aria-label="Color page right panels">
+        <button class="top-tab" data-info="timeline">Timeline</button>
+        <button class="top-tab active" data-info="nodes">Nodes</button>
+        <button class="top-tab" data-info="effects">Effects</button>
+        <button class="top-tab" data-info="lightbox">Lightbox</button>
+      </nav>
+    </header>
+
+    <section class="upper-workspace" aria-label="Upper Color page workspace">
+      <aside class="gallery-pane pane" data-info="gallery-pane">
+        <div class="pane-toolbar">
+          <span>Gallery</span>
+          <button class="small-icon" data-info="gallery-sort" aria-label="Gallery sort"></button>
+        </div>
+        <div class="empty-gallery" data-info="stills">No stills created</div>
+      </aside>
+
+      <section class="viewer-pane pane" data-info="viewer">
+        <div class="viewer-toolbar">
+          <span class="zoom">96%</span>
+          <span>Timeline 1</span>
+          <span>00:00:02:20</span>
+        </div>
+        <div class="viewer-screen" data-info="viewer-screen">
+          <div class="viewer-message">No frame available for MediaOut1</div>
+        </div>
+        <div class="transport" aria-label="Viewer transport">
+          <button data-info="previous-frame" aria-label="Previous frame"></button>
+          <button data-info="play-reverse" aria-label="Play reverse"></button>
+          <button data-info="stop" aria-label="Stop"></button>
+          <button data-info="play" aria-label="Play"></button>
+          <button data-info="next-frame" aria-label="Next frame"></button>
+          <button class="loop" data-info="loop" aria-label="Loop playback"></button>
+        </div>
+      </section>
+
+      <aside class="nodes-pane pane" data-info="node-graph">
+        <div class="pane-toolbar">
+          <span>Clip</span>
+          <span class="node-dot"></span>
+        </div>
+        <div class="node-graph">
+          <svg viewBox="0 0 520 310" role="img" aria-label="Node graph mockup">
+            <defs>
+              <linearGradient id="nodeGrid" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#2b2c33"></stop>
+                <stop offset="1" stop-color="#25262d"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="520" height="310" fill="url(#nodeGrid)"></rect>
+            <g stroke="#343741" stroke-width="1">
+              <path d="M0 34H520M0 68H520M0 102H520M0 136H520M0 170H520M0 204H520M0 238H520M0 272H520"></path>
+              <path d="M52 0V310M104 0V310M156 0V310M208 0V310M260 0V310M312 0V310M364 0V310M416 0V310M468 0V310"></path>
+            </g>
+            <path d="M70 155 C150 120 225 100 300 118 S430 170 505 155" fill="none" stroke="#777" stroke-width="2.5"></path>
+            <circle cx="24" cy="155" r="7" fill="#92c83e" stroke="#111" stroke-width="3"></circle>
+            <circle cx="505" cy="155" r="7" fill="#92c83e" stroke="#111" stroke-width="3"></circle>
+            <g class="node-card-svg" data-info="serial-node">
+              <rect x="222" y="78" width="62" height="48" rx="4" fill="#17181d" stroke="#ff5d45" stroke-width="2"></rect>
+              <rect x="228" y="85" width="50" height="26" fill="#232631" stroke="#576b94"></rect>
+              <text x="253" y="119" text-anchor="middle" font-size="12" fill="#f2f2f2">01</text>
+              <circle cx="220" cy="101" r="4" fill="#39a9ff"></circle>
+              <circle cx="286" cy="101" r="4" fill="#92c83e"></circle>
+              <circle cx="253" cy="76" r="4" fill="#92c83e"></circle>
+              <circle cx="253" cy="128" r="4" fill="#39a9ff"></circle>
+            </g>
+          </svg>
+        </div>
+      </aside>
+    </section>
+
+    <section class="clip-strip" aria-label="Color page clip strip">
+      <div class="clip-meta" data-info="clip-counter">00:00:33:06</div>
+      <div class="clips-row">
+        <button class="clip-thumb active" data-info="clip-thumbnail">
+          <span class="clip-num">07</span>
+          <span class="clip-image clip-1"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb" data-info="clip-thumbnail">
+          <span class="clip-num">08</span>
+          <span class="clip-image clip-2"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb" data-info="clip-thumbnail">
+          <span class="clip-num">09</span>
+          <span class="clip-image clip-3"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb" data-info="clip-thumbnail">
+          <span class="clip-num">10</span>
+          <span class="clip-image clip-4"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb" data-info="clip-thumbnail">
+          <span class="clip-num">11</span>
+          <span class="clip-image clip-5"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb" data-info="clip-thumbnail">
+          <span class="clip-num">12</span>
+          <span class="clip-image clip-6"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb" data-info="clip-thumbnail">
+          <span class="clip-num">13</span>
+          <span class="clip-image clip-7"></span>
+          <span class="clip-label">H.265 Main 10 L4.0</span>
+        </button>
+        <button class="clip-thumb black" data-info="offline-clip">
+          <span class="clip-num">22</span>
+          <span class="clip-image"></span>
+          <span class="clip-label">MediaOut1</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lower-workspace" aria-label="Three independently navigable Color page lower sections">
+      <section class="dock dock-left" data-section="left">
+        <nav class="dock-nav" id="left-nav" aria-label="Left color-palette navigation"></nav>
+        <header class="dock-title">
+          <h2 id="left-title"></h2>
+          <div class="dock-actions" id="left-actions"></div>
+        </header>
+        <div class="dock-body" id="left-panel"></div>
+      </section>
+
+      <section class="dock dock-middle" data-section="middle">
+        <nav class="dock-nav" id="middle-nav" aria-label="Middle color-tool navigation"></nav>
+        <header class="dock-title">
+          <h2 id="middle-title"></h2>
+          <div class="dock-actions" id="middle-actions"></div>
+        </header>
+        <div class="dock-body" id="middle-panel"></div>
+      </section>
+
+      <section class="dock dock-right" data-section="right">
+        <nav class="dock-nav" id="right-nav" aria-label="Right utility navigation"></nav>
+        <header class="dock-title">
+          <h2 id="right-title"></h2>
+          <div class="dock-actions" id="right-actions"></div>
+        </header>
+        <div class="dock-body" id="right-panel"></div>
+      </section>
+    </section>
+
+    <footer class="page-footer">
+      <span class="resolve-logo"></span>
+      <span>DaVinci Resolve 20</span>
+      <nav class="page-icons" aria-label="Resolve pages">
+        <button data-info="media-page" aria-label="Media page"></button>
+        <button data-info="cut-page" aria-label="Cut page"></button>
+        <button data-info="edit-page" aria-label="Edit page"></button>
+        <button class="active" data-info="color-page" aria-label="Color page"></button>
+        <button data-info="fairlight-page" aria-label="Fairlight page"></button>
+        <button data-info="deliver-page" aria-label="Deliver page"></button>
+      </nav>
+      <button class="footer-gear" data-info="project-settings" aria-label="Project settings"></button>
+    </footer>
+  </main>
+
+  <div class="nav-tooltip hidden" id="nav-tooltip" role="tooltip">
+    <div class="nav-tooltip-title" id="nav-tooltip-title"></div>
+    <div class="nav-tooltip-body" id="nav-tooltip-body"></div>
+  </div>
+
+  <div class="info-overlay hidden" id="info-overlay">
+    <article class="info-popover" id="info-popover" role="dialog" aria-modal="false" aria-labelledby="info-title">
+      <button class="info-close" id="info-close" aria-label="Close popup">x</button>
+      <h3 id="info-title"></h3>
+      <p id="info-desc"></p>
+      <div class="info-effects" id="info-effects">
+        <section>
+          <strong>Increase / enable</strong>
+          <p id="info-up"></p>
+        </section>
+        <section>
+          <strong>Decrease / disable</strong>
+          <p id="info-down"></p>
+        </section>
+      </div>
+    </article>
+  </div>
+
+  <script src="davinci_resolve_color_page.js"></script>
+</body>
+</html>
